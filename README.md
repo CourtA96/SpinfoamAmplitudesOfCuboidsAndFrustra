@@ -51,3 +51,9 @@ julia> contract = ContractionMod.Contraction(int1,int2,int3,int4,int5,int6,int7,
 In the cuboid case, everything is the same as above except `Jvector = [1,1,1,1,1,1]`.
 
 `Jvector` is the vector of spins that define the spinfoam, as in `createIntertwiners.jl`. `loadInts(jVector)` reads in the intertwiners from the `.txt` files, and `Contraction(int1,int2,int3,int4,int5,int6,int7,int8)` performs the contraction.
+
+# Authors of the Code:
+
+ - Courtney Allen (University of Guelph, Canada)
+    - Contact at: callen15@uoguelph.ca
+ - Sebastian Steinhaus (Friedrich-Schiller-Universitat Jena, Germany)
