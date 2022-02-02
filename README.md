@@ -20,14 +20,14 @@ The code is broken into separate directories for the frustra and cuboid cases. E
 To illustrate how to use this module, take the case where all spins are one half. To use this module in the frustra case:
 
 ```
-julia> include("frustra\\createIntertwiners.jl")
+julia> include("Frustra\\createIntertwiners.jl")
 julia> createIntertwiners.createInts([1,1,1])
 ```
 
 To use this module in the cuboid case:
 
 ```
-julia> include("frustra\\createIntertwiners.jl")
+julia> include("Cuboids\\createIntertwiners.jl")
 julia> createIntertwiners.createInts([1,1,1,1,1,1])
 ```
 
@@ -42,7 +42,7 @@ The `createInts` function saves the intertwiners to `.txt` files named `IntNj[x,
 To use this module in the frustra case (again, using the spin one half case as an example):
 
 ```
-julia> include("ContractionMod.jl")
+julia> include("Frustra\\ContractionMod.jl")
 julia> Jvector = [1,1,1]
 julia> int1,int2,int3,int4,int5,int6,int7,int8 = ContractionMod.loadInts(Jvector)
 julia> contract = ContractionMod.Contraction(int1,int2,int3,int4,int5,int6,int7,int8)
