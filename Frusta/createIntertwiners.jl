@@ -1755,16 +1755,6 @@ function createInts(Jay::Vector{Int})
     InterTemp = Array{Any}(undef,8,1)
     Inter = Array{Any}(undef,8,1)
 
-    #v = Array{Any}(undef,8,1)
-    #    v[1] = ["x","y","z"]
-    #    v[2] = ["x","minusy","z"]
-    #    v[3] = ["minusx","y","z"]
-    #    v[4] = ["x","y","minusz"]
-    #    v[5] = ["minusx","y","minusz"]
-    #    v[6] = ["x","y","minusz"]
-    #    v[7] = ["x","minusy","z"]
-    #    v[8] = ["minusx","y","z"]
-
     j = Array{Any}(undef,8,1)
         j[1] = [j1,j1,j1];
         j[2] = [j1,j2,j3];
@@ -1774,17 +1764,6 @@ function createInts(Jay::Vector{Int})
         j[6] = [j1,j2,j3];
         j[7] = [j1,j2,j3];
         j[8] = [j1,j2,j3];
-
-
-    #srtOrder = Array{Any}(undef,8,1)
-    #    srtOrder[1] = [1,1,1]
-    #    srtOrder[2] = [1,2,1]
-    #    srtOrder[3] = [2,1,1]
-    #    srtOrder[4] = [1,1,2]
-    #    srtOrder[5] = [2,1,2]
-    #    srtOrder[6] = [1,1,2]
-    #    srtOrder[7] = [1,2,1]
-    #    srtOrder[8] = [2,1,1]
 
         count = 0
 
@@ -1869,12 +1848,6 @@ function createInts(Jay::Vector{Int})
 
             end
 
-            #print("\n The time to sort the intertwiner is: ")
-
-            #@time Inter[i] = srt(InterTemp[i],srtOrder[i])
-
-            #print("\n The norm of the intertwiner is: ",
-            #sum(abs.(Inter[i])))
             print("\n\n")
 
             count += 1
